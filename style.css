@@ -1,0 +1,90 @@
+/* Body */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 150px;
+    background-color: rgb(47, 57, 73);
+}
+
+/* ======================================== */
+/*              HEADER INFO                 */
+/* ======================================== */
+
+/* Header navigation list */
+.header-nav .nav-list {
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav .nav-list .logo-item + li {
+    margin-left: auto;
+}
+
+/* Header navigation link*/
+.header-nav .nav-link {
+    text-decoration: none;
+    color: rgb(232, 232, 232);
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.header-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.132);
+    border-radius: 5px;
+}
+
+/* ======================================== */
+/*            ABOUT ME SECTION              */
+/* ======================================== */
+
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.left-side {
+    flex: .75;
+}
+
+.right-side {
+    flex: .50;
+}
+
+
+/* Large name text on page */
+#name {
+    color: rgb(232, 232, 232);
+    font-size: 48px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#bio-header-top {
+    color: rgb(232, 232, 232);
+    font-size: 16px;
+    font-weight: normal;
+    font-family: cursive;
+    padding-top: 50px;
+}
+
+/* Bold text above bio */
+#bio-header {
+    color: rgb(232, 232, 232);
+    font-size: 26px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+/* Bio text */
+#bio-text {
+    color: rgb(232, 232, 232);
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: cursive;
+}

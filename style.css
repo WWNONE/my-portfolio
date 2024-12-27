@@ -1,90 +1,106 @@
-/* Body */
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 150px;
-    background-color: rgb(47, 57, 73);
-}
+/* ==========================================================================
+   Reset/Base Styles
+   ========================================================================== */
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-/* ======================================== */
-/*              HEADER INFO                 */
-/* ======================================== */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: rgb(184, 223, 255);
+    }
 
-/* Header navigation list */
-.header-nav .nav-list {
-    list-style: none;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+   .main {
+        margin: 100px;
+        border-style: solid;
+        border-color: black;
+    }
 
-.header-nav .nav-list .logo-item + li {
-    margin-left: auto;
-}
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+    .main_header {
+        background-color: rgb(172, 126, 215);
+    }
 
-/* Header navigation link*/
-.header-nav .nav-link {
-    text-decoration: none;
-    color: rgb(232, 232, 232);
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: cursive;
-}
+    .header_nav{
+        /* Navigation styles */
+    }
 
-.header-nav .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.132);
-    border-radius: 5px;
-}
+    .nav_list {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        justify-content: left;
+        
+    }
 
-/* ======================================== */
-/*            ABOUT ME SECTION              */
-/* ======================================== */
+    .logo + .nav_item {
+        margin-left: auto;
+    }
 
-.main-content {
-    display: flex;
-    gap: 20px;
-}
+    .nav_item {
+        margin-right: 2rem;
+        padding: 10px 15px;
+        background-color: rgb(247, 143, 231);
+    }
 
-.left-side {
-    flex: .75;
-}
+/* ==========================================================================
+   Main Content
+   ========================================================================== */
+    .main_content {
+        /* Main content styles */
+        display: flex;
+    }
 
-.right-side {
-    flex: .50;
-}
+    .intro_section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgb(255, 226, 163);
+        padding: 20px;
+        gap: 20px;
+    }
 
+    .intro_left .intro_right {
+        padding-top: 10px
+    }
 
-/* Large name text on page */
-#name {
-    color: rgb(232, 232, 232);
-    font-size: 48px;
-    font-weight: bold;
-    font-family: cursive;
-}
+    .intro_left {
+        /* Left side styles */
+        background-color: rgb(247, 182, 102);
+        padding: 20px;
+    }
 
-#bio-header-top {
-    color: rgb(232, 232, 232);
-    font-size: 16px;
-    font-weight: normal;
-    font-family: cursive;
-    padding-top: 50px;
-}
+    .intro_left .intro_name {
+        font-size: 80px;
+    }
 
-/* Bold text above bio */
-#bio-header {
-    color: rgb(232, 232, 232);
-    font-size: 26px;
-    font-weight: bold;
-    font-family: cursive;
-}
+    .intro_right {
+        /* Right side styles */
+        background-color: rgb(251, 153, 114);
+        padding: 20px;
+    }
 
-/* Bio text */
-#bio-text {
-    color: rgb(232, 232, 232);
-    font-size: 16px;
-    font-weight: lighter;
-    font-family: cursive;
-}
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+    @media (max-width: 768px) {
+        /* Mobile styles */
+    }
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+    .hidden {
+        display: none;
+    }
